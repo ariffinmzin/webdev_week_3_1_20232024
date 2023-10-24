@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- external -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* internal @ embedded */
+        p {
+            color: red;
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        h1,h2,h3{
+            font-style: oblique;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: solid 2px black;
+        }
+
+        .styleno2{
+            color: blue;
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #styleno3{
+            color: green;
+            background-color: yellow;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-style: italic;
+
+        }
+
+        #h1style1{
+            color: green;
+            background-color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        a:link{
+            color:black
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:active{
+            color: green;
+        }
+
+
+    </style>
 </head>
 <body>
-    <p>Test</p>
-    <h1>Test</h1>
+    <h1>CSS Style H1</h1>
+
+    <h2>CSS Style H2</h2>
+    <!-- inline css -->
+    <p>Style 1</p>
+    <!-- class -->
+    <p class="styleno2">Style 2</p>
+    <!-- id -->
+    <p id="styleno3">Style 3</p>
+
+
+
+    <h1 id="h1style1">Test</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+    <a href="https://www.google.com">Google</a>
     
 </body>
 </html>
